@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>
+h1 {
+  border-left: 5px solid red;
+}
+
+h2 {
+  border-left: 4px dotted blue;
+}
+
+div {
+  border-left: double;
+}
+</style>
+</head>
+<body>
+
+<h1>A heading with a solid red left border</h1>
+
+<h2>A heading with a dotted blue left border</h2>
+
+<div>A div element with a double left border.</div>
+
+</body>
+</html>
