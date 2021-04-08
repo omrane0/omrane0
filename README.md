@@ -1,5 +1,4 @@
-- 👋 Hi, I’m @omrane0
-- 👀 I’m interested in ...
+
 - 📫 Comment me joindre ...
 -  🌎 omrane  https://sites.google.com/view/fayc
 -  💶  @hgndp  https://github.com/omrane0/
