@@ -1,26 +1,561 @@
+<!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-h1 {
-  border-left: 5px solid red;
+.example {
+  padding: 20px;
+  color: white;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
 }
 
-h2 {
-  border-left: 4px dotted blue;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
 }
 
-div {
-  border-left: double;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
 }
 </style>
 </head>
 <body>
 
-<h1>A heading with a solid red left border</h1>
-
-<h2>A heading with a dotted blue left border</h2>
-
-<div>A div element with a double left border.</div>
+<h2>Typical Media Query Breakpoints</h2>
+<p class="example">Resize the browser window to see how the background color of this paragraph changes on different screen sizes.</p>
 
 </body>
 </html>
+
+Typical Media Query Breakpoints
+Resize the browser window to see how the background color of this paragraph changes on different screen sizes.
+
+ 2.  CSS align-items Property                                                     
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#main {
+  width: 220px;
+  height: 300px;
+  border: 1px solid black; 
+  display: flex;
+  align-items: center;
+}
+#main div {
+   flex: 1;
+}
+</style>
+</head>
+<body>
+<div id="main">
+  <div style="background-color:coral;">RED</div>
+  <div style="background-color:lightblue;">BLUE</div>  
+  <div style="background-color:lightgreen;">Green div with more content.</div>
+</div>
+<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the align-items property.</p>
+</body>
+</html>
+
+RED
+BLUE
+Green div with more content.
+Note: Internet Explorer 10 and earlier versions do not support the align-items property.
+ 3.  CSS border Property                                                         
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  border: 5px solid red;
+}
+h2 {
+  border: 4px dotted blue;
+}
+div {
+  border: double;
+}
+</style>
+</head>
+<body>
+<h1>A heading with a solid red border</h1>
+<h2>A heading with a dotted blue border</h2>
+<div>A div element with a double border.</div>
+</body>
+</html>
+A heading with a solid red border
+A heading with a dotted blue border
+A div element with a double border.
+
+ 4. CSS border-bottom Property                                              
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  border-bottom: 5px solid red;
+}
+h2 {
+  border-bottom: 4px dotted blue;
+}
+div {
+  border-bottom: double;
+}
+</style>
+</head>
+<body>
+<h1>A heading with a solid red bottom border</h1>
+<h2>A heading with a dotted blue bottom border</h2>
+<div>A div element with a double bottom border.</div>
+</body>
+</html>
+
+A heading with a solid red bottom border
+A heading with a dotted blue bottom border
+A div element with a double bottom border.
+
+ 5. CSS border-spacing Property                                             
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {
+  border: 1px solid black;
+}
+#table1 {
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+#table2 {
+  border-collapse: separate;
+  border-spacing: 15px 50px;
+}
+</style>
+</head>
+<body>
+
+<h2>border-spacing: 15px:</h2>
+<p>When using "border-collapse: separate", the border-spacing property can be used to set the space between the cells:</p>
+<table id="table1">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+<h2>border-spacing: 15px 50px:</h2>
+<p>Using two values (the first sets the horizontal spacing and the second sets the vertical spacing):</p>
+<table id="table2">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+</body>
+</html>
+
+border-spacing: 15px:
+When using "border-collapse: separate", the border-spacing property can be used to set the space between the cells:
+Firstname
+Lastname
+Peter
+Griffin
+Lois
+Griffin
+
+border-spacing: 15px 50px:
+Using two values (the first sets the horizontal spacing and the second sets the vertical spacing):
+Firstname
+Lastname
+Peter
+Griffin
+Lois
+Griffin
+
+ 6. CSS box-decoration-break Property                             
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+span {
+  border: 5px solid red;
+  padding:  0em 1em;
+  border-radius: 16px;
+  font-size: 24px;
+  line-height: 2;
+}
+span.ex1 { 
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+span.ex2 { 
+  -webkit-box-decoration-break: slice;
+  -o-box-decoration-break: slice;
+  box-decoration-break: slice;
+}
+</style>
+</head>
+<body>
+
+<h1>The box-decoration-break Property</h1>
+
+<h2>box-decoration-break: clone:</h2>
+<span class="ex1">CSS<br>is<br>easy<br>to learn</span>
+<p><strong>Note:</strong> IE/Edge do not support the box-decoration-break property.</p>
+</body>
+</html>
+The box-decoration-break Property
+box-decoration-break: clone:
+CSS
+is
+easy
+to learn
+Note: IE/Edge do not support the box-decoration-break property.
+
+ 7. CSS  padding Property                                                    
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  border: 1px solid red; 
+  padding: 35px;
+}
+p.ex2 {
+  border: 1px solid red; 
+  margin: 35px;
+}
+</style>
+</head>
+<body>
+<h1>The padding Property</h1>
+<p class="ex1">This paragraph has a padding of 35 pixels on all four sides.</p>
+<p class="ex2">This paragraph has no specified padding, but a margin of 35 pixels on all four sides.</p>
+<p><strong>Note:</strong> Padding creates extra space within an element, while margin creates extra space around an element!</p>
+</body>
+</html>
+
+The padding Property
+This paragraph has a padding of 35 pixels on all four sides.
+This paragraph has no specified padding, but a margin of 35 pixels on all four sides.
+Note: Padding creates extra space within an element, while margin creates extra space around an element!
+
+ 8. CSS padding-right Property                                                   
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  border: 1px solid red; 
+  padding-right: 2em;
+}
+</style>
+</head>
+<body>
+<h1>The padding-right Property</h1>
+<p class="ex1">A paragraph with a 2 em right padding. The em unit is relative to the font-size of the element (2em means 2 times the size of the current font).</p>
+</body>
+</html>
+The padding-right Property
+A paragraph with a 2 em right padding. The em unit is relative to the font-size of the element (2em means 2 times the size of the current font).
+
+
+ 1.  CSS  The border-radius Property                                           
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#rcorners1 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+</style>
+</head>
+<body>
+
+<h1>The border-radius Property</h1>
+
+<p>Rounded corners for an element with a specified background color:</p>
+<p id="rcorners1">Rounded corners!</p>
+<p>Rounded corners for an element with a border:</p>
+<p id="rcorners2">Rounded corners!</p>
+<p>Rounded corners for an element with a background image:</p>
+<p id="rcorners3">Rounded corners!</p>
+
+</body>
+</html>
+The border-radius Property
+Rounded corners for an element with a specified background color:
+Rounded corners!
+Rounded corners for an element with a border:
+Rounded corners!
+Rounded corners for an element with a background image:
+Rounded corners!
+
+ 2.  CSS background-clip Property                                             
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#example1 {
+  border: 10px dotted black;
+  padding: 35px;
+  background: yellow;
+}
+</style>
+</head>
+<body>
+<h1>The background-clip Property</h1>
+
+<p>No background-clip (border-box is default):</p>
+<div id="example1">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: padding-box:</p>
+<div id="example2">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: content-box:</p>
+<div id="example3">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+</body>
+</html>
+The background-clip Property
+No background-clip (border-box is default):
+Lorem Ipsum Dolor
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+background-clip: padding-box:
+
+ 3.  CSS HSL Colors                                                                 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#p1 {background-color:hsl(120,100%,50%);}
+#p2 {background-color:hsl(120,100%,75%);}
+#p3 {background-color:hsl(120,100%,25%);}
+#p4 {background-color:hsl(120,60%,70%);}
+#p5 {background-color:hsl(290,100%,50%);}
+#p6 {background-color:hsl(290,60%,70%);}
+</style>
+</head>
+<body>
+<h1>Define Colors With HSL Values</h1>
+<p id="p1">Green</p>
+<p id="p2">Light green</p>
+<p id="p3">Dark green</p>
+<p id="p4">Pastel green</p>
+<p id="p5">Violet</p>
+<p id="p6">Pastel violet</p>
+</body>
+</html>
+Define Colors With HSL Values
+Green
+Light green
+Dark green
+Pastel green
+Violet
+Pastel
+
+
+ 4.  CSS Word Wrapping                                                            
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p.test {
+  width: 11em; 
+  border: 1px solid #000000;
+  word-wrap: break-word;
+}
+</style>
+</head>
+<body>
+<h1>The word-wrap Property</h1>
+<p class="test"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+</body>
+</html>
+The word-wrap Property
+This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.
+
+  5.  CSS  Specify the Speed Curve of the Transition            
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+<h1>The transition-timing-function Property</h1>
+<p>Hover over the div elements below, to see the different speed curves:</p>
+
+<div id="div1">linear</div><br>
+<div id="div2">ease</div><br>
+<div id="div3">ease-in</div><br>
+<div id="div4">ease-out</div><br>
+<div id="div5">ease-in-out</div><br>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+</body>
+</html>
+
+The transition-timing-function Property
+Hover over the div elements below, to see the different speed curves:
+linear
+
+ease
+
+ease-in
+
+ease-out
+
+ease-in-out
+
+Note: This example does not work in Internet Explorer 9 and earlier versions.
+ 6.  CSS  Button Colors                                                                 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+</style>
+</head>
+<body>
+<h2>Button Colors</h2>
+<p>Change the background color of a button with the background-color property:</p>
+<button class="button">Green</button>
+<button class="button button2">Blue</button>
+<button class="button button3">Red</button>
+<button class="button button4">Gray</button>
+<button class="button button5">Black</button>
+</body>
+</html>
+
+Button Colors
+Change the background color of a button with the background-color property:
+Green Blue Red Gray Black
+
+ 7.  CSS  Button Sizes                                                                
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {font-size: 10px;}
+.button2 {font-size: 12px;}
+.button3 {font-size: 16px;}
+.button4 {font-size: 20px;}
+.button5 {font-size: 24px;}
+</style>
+</head>
+<body>
+
+<h2>Button Sizes</h2>
+<p>Change the font size of a button with the font-size property:</p>
+
+<button class="button button1">10px</button>
+<button class="button button2">12px</button>
+<button class="button button3">16px</button>
+<button class="button button4">20px</button>
+<button class="button button5">24px</button>
+
+</body>
+</html>
+
+Button Sizes
+Change the font size of a button with the font-size property:
+10px 12px 16px 20px 24px
+  
