@@ -265,6 +265,300 @@ Sized Emojis
 😀 😄 😍 💗
 
 
+8 sept. 2022
+
+ 01. 
+
+https://www.tutorialrepublic.com/codelab.php?topic=css&file=margin
+
+<!DOCTYPE html>
+<html lang="en">
+<head>  <meta charset="utf-8">
+<title>CSS Margin for Individual Sides</title>
+<style>    h1 {        margin-top: 50px;
+        margin-bottom: 100px;
+        background: yellow;
+    }   p {  margin-left: 75px;
+        margin-right: 75px;
+        background: yellow;
+    } </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a simple paragraph of text.</p>
+    <p><strong>Note:</strong> Play with the margin property value to see how it works.</p>
+</body>
+</html>
+
+
+This is a heading
+This is a simple paragraph of text.
+Note: Play with the margin property value to see how it works.
+
+
+
+
+ 02. 
+
+fr.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/pt/css-box-model
+
+<!doctype html>
+<html>
+<head>
+    <title>CSS box model</title>
+    <meta charset="utf-8">
+    <style>
+        .lovey-dovey {
+            color: red;
+        }
+                #official-info {
+            background: rgb(230, 230, 230);
+            width: 70%;
+            height: 180px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+              #cute-cat {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3>The Box Model</h3>
+    <img src="https://www.kasandbox.org/programming-images/misc/boxmodel.png" width="380">
+        <h1>All About Cats</h1>
+    <h3>Why I <span class="lovey-dovey">Love</span> Cats</h3>
+    <ul>
+        <li>Furry
+        <li>Cute
+        <li>Evil
+    </ul>
+    <div id="official-info"><h3>Official Info on Cats</h3>
+    <p><img id="cute-cat" src="https://www.kasandbox.org/programming-images/animals/cat.png"> The cat (Felis catus),.</p>
+    <p>.</p>
+    <p>Despite.</p>
+    <p>Cats.</p>
+    </div>
+        Read more on <a href="http://en.wikipedia.org/wiki/Cat">Wikipedia</a>.
+</body>
+</html>
+All About Cats
+Why I Love Cats
+Furry
+Cute
+Evil
+Official Info on Cats
+ The cat (Felis catus), a  Earth.
+Cat.
+Despite 
+Cats.
+Read more on Wikipedia.
+
+  
+
+
+ 03. 
+
+fr.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/pt/css-box-model
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS position</title>
+        <style>
+        body {
+            font-family: fantasy;
+            color: rgb(199, 177, 14);
+        }
+        
+        #landscape {
+            width: 250px;
+        }
+        </style>
+    </head>
+    <body>
+
+    <h1>Dance Party</h1>
+
+    <img src="https://www.kasandbox.org/programming-images/landscapes/fields-of-grain.png" id="landscape">
+    <img src="https://www.kasandbox.org/programming-images/avatars/Hopper-jumping.gif" id="hopper">
+    <img src="https://www.kasandbox.org/programming-images/creatures/Winston.png" id="winston">
+    
+    <div id="song">
+    <h3>Jamming to "Fields of Gold" by Sting</h3>
+    <p>You'll remember me when the west wind moves<br>
+Upon the fields of barley<br>
+You'll forget the sun in his jealous sky<br>
+As we walk in fields of gold
+    </p>
+    
+    <p>So she took her love<br>
+For to gaze awhile<br>
+Upon the fields of barley<br>
+In his arms she fell as her hair came down<br>
+Among the fields of gold</p>
+
+    <p>Will you stay with me, will you be my love<br>
+Among the fields of barley<br>
+We'll forget the sun in his jealous sky<br>
+As we lie in fields of gold</p>
+    </div>
+    
+    </body>
+</html>
+
+Dance Party
+  
+Jamming to "Fields of Gold" by Sting
+You'll remember me when the west wind moves
+
+
+
+
+ 04. text decoration
+https://www.tutorialspoint.com/css/css_text.htm
+<html>
+   <head>
+   </head>
+   <body>
+      <p style = "text-decoration:underline;">
+         This will be underlined
+      </p>
+      
+      <p style = "text-decoration:line-through;">
+         This will be striked through.
+      </p>
+      
+      <p style = "text-decoration:overline;">
+         This will have a over line.
+      </p>
+      
+      <p style = "text-decoration:blink;">
+         This text will have blinking effect
+      </p>
+   </body>
+</html>
+
+
+This will be underlined
+This will be striked through.
+This will have a over line.
+This text will have blinking effect
+
+
+
+ 05. borders
+
+https://www.tutorialspoint.com/css/css_borders.htm
+
+<html>
+   <head>
+      <style type = "text/css">
+         p.example1 {
+            border:1px solid;
+            border-bottom-color:#009900; /* Green */
+            border-top-color:#FF0000;    /* Red */
+            border-left-color:#330000;   /* Black */
+            border-right-color:#0000CC;  /* Blue */
+         }
+         p.example2 {
+            border:1px solid;
+            border-color:#009900;        /* Green */
+         }
+      </style>
+   </head>
+
+   <body>
+      <p class = "example1">
+         This example is showing all borders in different colors.
+      </p>
+      
+      <p class = "example2">
+         This example is showing all borders in green color only.
+      </p>
+   </body>
+</html>
+
+
+This example is showing all borders in different colors.
+This example is showing all borders in green color only.
+
+
+
+ 06. Colors
+
+https://www.tutorialspoint.com/css/css3_color.htm
+
+<html>
+   <head>
+      <style>
+         #m1 {background-color:rgb(255,0,0);opacity:0.6;} 
+         #m2 {background-color:rgb(0,255,0);opacity:0.6;} 
+         #m3 {background-color:rgb(0,0,255);opacity:0.6;}
+      </style>
+   </head>
+   <body>
+      <p>HSLA colors:</p>
+      <p id = "m1">Red</p>
+      <p id = "m2">Green</p>
+      <p id = "m3">Blue</p>
+   </body>
+</html>
+
+HSLA colors:
+Red
+Green
+Blue
+
+
+
+
+
+ 07.  2d transform
+
+https://www.tutorialspoint.com/css/css3_2d_transform.htm
+
+<html>
+   <head>
+       <style>
+         div {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+         }
+         div#myDiv {
+            /* IE 9 */
+            -ms-transform: rotate(20deg);
+                        /* Safari */
+            -webkit-transform: rotate(20deg);
+                        /* Standard syntax */
+            transform: rotate(20deg);
+         }
+      </style>
+        </head>
+   <body>
+      <div>
+         Tutorials point.com.
+      </div>
+          <div id = "myDiv">
+         Tutorials point.com
+      </div>
+   </body>
+</html>
+
+
+Tutorials point.com.
+Tutorials point.com
+
+
+
+
+
+
+
 
 
 
