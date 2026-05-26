@@ -727,8 +727,313 @@ $(document).ready(function(){
 
 
 
+# Basic-Collapsible
 
-Insert before Insert after
+
+8 sept. 2022
+
+01.  HTML Images - src & alt attributes
+
+
+https://revisezone.com/Html/LearningHtml/HtmlImages
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>GIF IMAGES</h2>
+<p>HTML GIF</p>
+<img src="img.gif">
+</body>
+</html>
+GIF IMAGES
+HTML GIF
+
+
+
+02.  Tracer le chemin et les formes sur la toile
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Embedding Canvas Into HTML Pages</title>
+<style>
+	canvas {
+		border: 1px solid #000;
+	}
+</style>
+<script>
+    window.onload = function() {
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        // draw stuff here
+    };
+</script>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="200"></canvas>
+</body>
+</html>
+
+
+
+
+
+
+
+03. Quels sont les attributs
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using HTML Attributes</title>
+</head>
+<body>
+    <p><img src="/examples/images/smiley.png" width="30" height="30" alt="Smiley"></p>
+    <p><a href="https://www.google.com/" title="Search Engine" target="_blank">Google</a></p>
+    <p><abbr title="Hyper Text Markup Language">HTML</abbr></p>
+    <p><input type="text" value="John Doe"></p>
+</body>
+</html>
+
+
+Google
+HTML
+
+
+
+
+
+ 04.  L'attribut de classe
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>HTML class Attribute</title>
+    <style>
+        .box{
+            padding: 20px;
+            border: 1px solid grey;
+        }
+        .highlight{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p><input type="text" class="highlight"></p>
+    <div class="box highlight">Some content</div>
+    <p class="highlight">This is a paragraph.</p>
+</body>
+</html>
+
+
+Du contenu
+Ceci est un paragraphe.
+
+
+
+
+05.  L'attribut de titre
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML title Attribute</title>
+</head>
+<body>
+    <p><abbr title="World Wide Web Consortium">W3C</abbr><p>
+    <a href="/examples/images/kites.jpg" title="Click to view a larger image" target="_blank">
+        <img src="/examples/images/kites-thumb.jpg" alt="kites">
+    </a>
+    <p><strong>Note:</strong> Place mouse pointer over the text and image to see how it works.</p>
+</body>
+</html>
+
+W3C
+
+Remarque: placez le pointeur de la souris sur le texte et l'image pour voir comment cela fonctionne.
+
+
+
+
+06.  Organisation du contenu avec des en-têtes
+
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Example of HTML headings tag</title>
+</head>
+<body>
+    <h1>Heading level 1</h1>
+    <h2>Heading level 2</h2>
+    <h3>Heading level 3</h3>
+    <h4>Heading level 4</h4>
+    <h5>Heading level 5</h5>
+    <h6>Heading level 6</h6>
+</body>
+</html> 
+
+
+Titre de niveau 1
+Titre de niveau 2
+Titre de niveau 3
+Titre de niveau 4
+Titre de niveau 5
+Titre de niveau 6
+
+
+
+
+07.   Création de liens de téléchargement
+
+
+<html>
+<head>
+    <title>HTML Download Links</title>
+</head>
+<body>
+    <p><a href="/examples/downloads/test.zip">Download Zip file</a></p>
+    <p><a href="/examples/downloads/masters.pdf">Download PDF file</a></p>
+    <p><a href="/examples/downloads/sample.jpg">Download Image file</a></p>
+</body>
+</html>
+
+Télécharger le fichier Zip
+Télécharger le fichier PDF
+Télécharger le fichier image
+
+
+
+
+08.  Formatage du texte avec HTML
+
+
+<html>
+<head>
+<title>My Website</title>
+<head>
+<body>
+<h1>This is an example of an image</h1>
+
+<img src="image.png" alt="this is an image about facebook" width="100px" height="100px">
+
+</body>
+</html>
+
+This is an example of an image
+
+
+
+
+
+
+ 09.   Utilisation de l'élément d'image HTML5
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Specify Multiple Source for Images in HTML</title>
+</head>
+<body>
+    <picture>
+        <source media="(min-width: 1000px)" srcset="/examples/images/logo-large.png">
+        <source media="(max-width: 500px)" srcset="/examples/images/logo-small.png">
+        <img src="/examples/images/logo-default.png" alt="My logo">
+    </picture>
+	<p><strong>Note:</strong> Open the output in a new blank tab (Click the arrow next to "Show Output" button) and resize the browser window to understand how it actually works.</p>
+</body>
+</html>
+
+
+
+
+Remarque: ouvrez la sortie dans un nouvel onglet vide (cliquez sur la flèche à côté du bouton "Afficher la sortie") et redimensionnez la fenêtre du navigateur pour comprendre comment cela fonctionne réellement.
+
+
+
+
+
+
+10. Textarea
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Textarea</title>
+</head>
+<body>
+	<form>
+        <label for="address">Address:</label>
+        <textarea rows="3" cols="30" name="address" id="address"></textarea>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+11. HTML Form Elements
+
+https://www.w3schools.com/html/html_form_elements.asp
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Textarea</h2>
+<p>The textarea element defines a multi-line input field.</p>
+
+<form action="/action_page.php">
+  <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+  <br><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
+
+Textarea
+The textarea element defines a multi-line input field.
+
+
+
+
+
+
+
+
+
+
+12.  Bordure CSS - Propriété abrégée
+
+<html>
+<head>
+<style>
+p {
+  border: 5px solid red;
+}
+</style>
+</head>
+<body>
+<h2>The border Property</h2>
+<p>This property is a shorthand property for border-width, border-style, and border-color.</p>
+</body>
+</html>
+
+La propriété frontière
+Cette propriété est une propriété abrégée pour border-width, border-style et bord
+
+
+
+
+
 
 
 
