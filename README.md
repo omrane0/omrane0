@@ -4,7 +4,6 @@ omrane0/omrane0 is a ✨ special ✨ repository because its `README.md` (this fi
 You can click the Preview link to take a look at your changes.
 --->
 -  ✔️  https://github.com/omrane0
--  📕 https://gitlab.com/omrane0
 -  💼 https://sites.google.com/view/fayca
 
 01.  HTML Images 
