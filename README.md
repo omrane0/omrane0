@@ -1033,7 +1033,31 @@ Cette propriété est une propriété abrégée pour border-width, border-style 
 
 
 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creating Basic Tabs in Bootstrap</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="m-4">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Messages</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
 
 
 
