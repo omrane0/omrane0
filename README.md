@@ -1070,6 +1070,244 @@ Cette propriété est une propriété abrégée pour border-width, border-style 
 </html>
 
 
+8 sept. 2022
+
+01. Weather Widget
+
+https://www.w3schools.com/w3css/w3css_cards.asp
+
+LONDON 60° F
+MON
+
+TUE
+
+WED
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+<div class="w3-card-4 w3-margin" style="width:50%">
+  <div class="w3-display-container w3-text-white">
+    <img src="img_london.jpg" alt="Lights" style="width:100%">
+    <div class="w3-xlarge w3-display-bottomleft w3-padding">LONDON 60&deg; F</div>
+  </div>
+  <div class="w3-row">
+    <div class="w3-third w3-center">
+      <h3>MON</h3>
+      <img src="img_weather_sun.jpg" alt="sun" style="width:80px">
+    </div>
+    <div class="w3-third w3-center">
+      <h3>TUE</h3>
+      <img src="img_weather_cloud.jpg" alt="cloud" style="width:80px">
+    </div>
+    <div class="w3-third w3-center w3-margin-bottom">
+      <h3>WED</h3>
+      <img src="img_weather_clouds.jpg" alt="clouds" style="width:80px">
+    </div>
+  </div>
+</div>
+
+</body>
+</html> 
+
+
+
+
+02. Cartes W3.CSS
+
+<html> <title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container">
+  <h2>Photo Card</h2>
+  <div class="w3-card-4" style="width:50%">
+    <img src="img_snowtops.jpg" alt="Alps" style="width:100%">
+    <div class="w3-container w3-center">
+      <p>The Italian / Austrian Alps</p>
+    </div> </div>
+</div> </body> </html>
+
+Carte photo
+
+Les Alpes italiennes / autrichiennes
+
+03.  Bordures épaisses
+
+<!DOCTYPE html>
+<html> <title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body> <div class="w3-container">
+  <h2>Thick Border Bars</h2>
+  <div class="w3-panel w3-light-grey w3-leftbar">
+    <p>I have a thick left border.</p>
+  </div>  <div class="w3-panel w3-light-grey w3-leftbar w3-border-grey">
+    <p>I have a thick left border.</p>
+  </div>  <div class="w3-panel w3-leftbar w3-border-blue">
+    <p>I have a thick blue left border.</p>
+  </div>  <div class="w3-panel w3-leftbar w3-border-blue w3-text-blue">
+    <p>I have a thick blue left border.</p>
+  </div>  <div class="w3-panel w3-leftbar w3-border-red">
+    <p>I have a thick red left border.</p>
+  </div>  <div class="w3-panel w3-leftbar w3-border-red w3-text-red">
+    <p>I have a thick red left border.</p>
+  </div>  <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+    <p>I have a thick blue left border and a pale-blue background color.</p>
+  </div>  <div class="w3-panel w3-topbar w3-bottombar w3-border-red w3-pale-red">
+    <p>I have a thick red top and bottom border and a pale-red background color.</p>
+  </div>  <div class="w3-panel w3-leftbar w3-border-green">
+    <p>I have a thick green left border.</p>
+  </div>  <div class="w3-panel w3-leftbar w3-border-green w3-text-green">
+    <p>I have a thick green left border.</p>
+  </div>  <div class="w3-panel w3-leftbar w3-border-yellow">
+    <p>I have a thick yellow left border.</p>
+  </div>   <div class="w3-panel w3-leftbar w3-border-yellow w3-text-yellow">
+    <p>I have a thick yellow left border.</p>
+  </div> </div> </body> </html>
+Barres de bordure épaisses
+   J'ai une bordure gauche épaisse.
+J'ai une bordure gauche épaisse.
+J'ai une épaisse bordure gauche bleue.
+J'ai une épaisse bordure gauche bleue.
+J'ai une épaisse bordure gauche rouge.
+
+04. Remarques W3.CSS  
+
+<html> <title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body> <div class="w3-container">
+  <div class="w3-panel w3-pale-blue w3-leftbar w3-rightbar w3-border-blue">
+    <p>London is the most populous city in the United Kingdom,
+    with a metropolitan area of over 9 million inhabitants.</p>
+  </div> </div> </body>  </html>
+     Londres est la ville la plus peuplée du Royaume-Uni, avec une zone métropolitaine de plus de 9 millions d'habitants.    
+
+
+
+05.  Utilisation des symboles HTML 
+
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="w3-container">
+
+<div class="w3-panel w3-center w3-leftbar w3-sand">
+<p><i class="w3-serif w3-xlarge">
+<span style="font-size:150px;line-height:0.6em;opacity:0.2">✔</span>
+Programming in C will slowly decline.<br>
+Programming in JavaScript will be more important.</i></p>
+</div>
+
+</body>
+</html>
+
+
+
+✔ La programmation en C diminuera lentement.
+La programmation en JavaScript sera plus importante.
+
+
+
+06. Liste des avatars  
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body> <div class="w3-container">  <h2>Avatar List</h2>
+  <p>You can combine w3-ul and the w3-bar classes to create an avatar list:</p>
+  <ul class="w3-ul w3-card-4">    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Mike</span><br>
+        <span>Web Designer</span>     </div>   </li>  <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="img_avatar5.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Jill</span><br>   <span>Support</span>   </div>
+    </li>    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="img_avatar6.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Jane</span><br>
+        <span>Accountant</span>
+      </div>    </li>   </ul>
+</div> </body> </html>
+Liste des avatars
+Vous pouvez combiner les classes w3-ul et w3-bar pour créer une liste d'avatar:
+×
+
+Mike
+Web Designer
+×
+
+Soutien Jill
+
+
+×
+
+Jane
+comptable
+
+07. Badges UTF-8 
+
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>  <div class="w3-container">
+  <h2>W3.CSS Badges</h2>
+  <p>You can display single digit badges using UTF-8 Dingbats:</p>
+  <div class="w3-xxlarge">
+  &#x2776; &#x2777; &#x2778; &#x2779; &#x277A;
+  &#x2785; &#x2786; &#x2787; &#x2788; &#x2789;
+  </div>
+  <div class="w3-xxlarge w3-text-red">
+  &#x2776; &#x2777; &#x2778; &#x2779; &#x277A;
+  &#x2785; &#x2786; &#x2787; &#x2788; &#x2789;
+  </div> </div> </body>
+</html>
+
+Badges W3.CSS
+Vous pouvez afficher des badges à un chiffre à l'aide de Dingbats UTF-8:
+❶ ❷ ❸ ❹ ❺ ➅ ➆ ➇ ➈ ➉
+❶ ❷ ❸ ❹ ❺ ➅ ➆ ➇ ➈ ➉
+
+
+08. Balises tournantes
+
+<html> <title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body> <div class="w3-container">
+  <h2></h2>
+  <span class="w3-tag w3-spin w3-large">
+  STOP   </span> </div>  </body> </html> 
+Affichage d'un signe tournant
+ARRÊTER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
